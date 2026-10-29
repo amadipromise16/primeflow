@@ -110,3 +110,4 @@ fs.writeFileSync(path.join(rootDir, '.gitignore'), gitignore, 'utf8');
 console.log('✓ Created .gitignore');
 
 console.log('\nAll files prepared successfully for GitHub Pages hosting!');
+
