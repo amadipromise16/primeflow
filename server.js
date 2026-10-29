@@ -7,19 +7,19 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const url = require('url');
-const { DatabaseSync } = require('node:sqlite');
 
-const PORT = process.env.PORT || 3000;
+const PORT = parseInt(process.env.PORT, 10) || 3000;
 const PUBLIC_DIR = path.join(__dirname, 'public');
 const DB_PATH = path.join(__dirname, 'black_plumbing.db');
 
-// Initialize SQLite database connection
+// Initialize SQLite database connection (supported in Node.js 22.5+)
 let sqliteDb = null;
 try {
+  const { DatabaseSync } = require('node:sqlite');
   sqliteDb = new DatabaseSync(DB_PATH);
   console.log('✓ SQLite Database Connected:', DB_PATH);
 } catch (err) {
-  console.error('SQLite connection warning:', err.message);
+  console.log('Note: Running with JSON/in-memory store (node:sqlite requires Node 22.5+):', err.message);
 }
 
 // Initialize in-memory / persistent data store
@@ -802,10 +802,10 @@ const server = http.createServer(async (req, res) => {
   });
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
   console.log(`=======================================================`);
   console.log(`BLACK PLUMBING HEATING & AIR - SERVER STARTED`);
-  console.log(`Listening on http://localhost:${PORT}`);
+  console.log(`Listening on http://0.0.0.0:${PORT}`);
   console.log(`Operating System: Windows | Node.js: ${process.version}`);
   console.log(`24/7 Hotline: (325) 231-4695`);
   console.log(`=======================================================`);
