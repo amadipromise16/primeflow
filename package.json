@@ -1,0 +1,19 @@
+{
+  "name": "primeflow-black-plumbing",
+  "version": "1.0.0",
+  "description": "Black Plumbing Heating & Air - Full Stack Web Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test-server.js"
+  },
+  "keywords": [
+    "plumbing",
+    "hvac",
+    "texas",
+    "water-heaters",
+    "full-stack"
+  ],
+  "author": "Antigravity Engineering",
+  "license": "ISC"
+}

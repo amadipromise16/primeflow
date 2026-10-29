@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <rect x="5" y="5" width="110" height="110" rx="16" fill="#0F172A" stroke="#10B981" stroke-width="2"/>
+  <!-- Shield with Checkmark -->
+  <path d="M60 22 L86 32 L86 58 C86 74 60 88 60 88 C60 88 34 74 34 58 L34 32 Z" fill="#1E293B" stroke="#10B981" stroke-width="2.5"/>
+  <polyline points="48,54 56,62 74,44" stroke="#10B981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="60" y="102" fill="#E2E8F0" font-family="sans-serif" font-size="7" font-weight="800" text-anchor="middle" letter-spacing="1">100% SATISFACTION</text>
+</svg>

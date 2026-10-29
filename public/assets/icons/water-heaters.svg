@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <circle cx="50" cy="50" r="46" fill="#1E293B" stroke="#E11D48" stroke-width="2"/>
+  <!-- Water Heater Tank Body -->
+  <rect x="32" y="24" width="36" height="50" rx="8" fill="#334155" stroke="#E2E8F0" stroke-width="2"/>
+  <!-- Top Pipes (Cold In & Hot Out) -->
+  <line x1="40" y1="14" x2="40" y2="24" stroke="#0EA5E9" stroke-width="4" stroke-linecap="round"/>
+  <line x1="60" y1="14" x2="60" y2="24" stroke="#E11D48" stroke-width="4" stroke-linecap="round"/>
+  <rect x="36" y="22" width="8" height="4" fill="#0EA5E9"/>
+  <rect x="56" y="22" width="8" height="4" fill="#E11D48"/>
+  <!-- Diagnostic Window / Heating Flame -->
+  <circle cx="50" cy="54" r="14" fill="#0F172A" stroke="#E11D48" stroke-width="1.5"/>
+  <path d="M50 44 C53 48 57 51 57 56 C57 60 54 63 50 63 C46 63 43 60 43 56 C43 52 47 48 50 44 Z" fill="#F59E0B"/>
+  <path d="M50 50 C51.5 53 53 54.5 53 57 C53 59 51.5 60.5 50 60.5 C48.5 60.5 47 59 47 57 C47 54.5 48.5 53 50 50 Z" fill="#EF4444"/>
+  <!-- Base Stand -->
+  <line x1="28" y1="74" x2="72" y2="74" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round"/>
+</svg>

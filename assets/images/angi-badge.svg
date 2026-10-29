@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 90" width="100%" height="100%">
+  <!-- Angi "A" Icon -->
+  <circle cx="28" cy="32" r="18" fill="#FF4D00"/>
+  <text x="28" y="40" fill="#FFFFFF" font-family="'Arial Black', sans-serif" font-size="22" font-weight="900" text-anchor="middle">A</text>
+  <!-- Score -->
+  <text x="65" y="38" fill="#FFFFFF" font-family="'Arial Black', Impact, sans-serif" font-size="28" font-weight="900">4.1</text>
+  <!-- Stars -->
+  <g transform="translate(65, 46)">
+    <polygon points="0,0 2,5 7,5 3,8 5,13 0,10 -5,13 -3,8 -7,5 -2,5" fill="#FBBC05"/>
+    <polygon points="12,0 14,5 19,5 15,8 17,13 12,10 7,13 9,8 5,5 10,5" fill="#FBBC05"/>
+    <polygon points="24,0 26,5 31,5 27,8 29,13 24,10 19,13 21,8 17,5 22,5" fill="#FBBC05"/>
+    <polygon points="36,0 38,5 43,5 39,8 41,13 36,10 31,13 33,8 29,5 34,5" fill="#FBBC05"/>
+    <polygon points="48,0 50,5 55,5 51,8 53,13 48,10 43,13 45,8 41,5 46,5" fill="#64748B"/>
+  </g>
+  <text x="65" y="74" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">14+ Reviews</text>
+</svg>

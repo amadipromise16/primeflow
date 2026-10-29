@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 90" width="100%" height="100%">
+  <!-- Google "G" Icon -->
+  <g transform="translate(18, 18)">
+    <path d="M24 10.5 C24 8.8 23.8 7.3 23.5 5.8 L0 5.8 L0 15.2 L13.5 15.2 C12.9 18.2 11.2 20.7 8.5 22.5 L8.5 28.5 L16.5 28.5 C21.2 24.2 24 17.8 24 10.5 Z" fill="#4285F4"/>
+    <path d="M0 35 C6.8 35 12.5 32.8 16.5 28.5 L8.5 22.5 C6.3 24 3.4 24.9 0 24.9 C-6.6 24.9 -12.2 20.4 -14.2 14.4 L-22.5 14.4 L-22.5 20.7 C-18.4 29.2 -9.9 35 0 35 Z" fill="#34A853"/>
+    <path d="M-14.2 14.4 C-14.7 12.8 -15 11 -15 9.2 C-15 7.4 -14.7 5.6 -14.2 4 L-14.2 -2.3 L-22.5 -2.3 C-24.2 1.2 -25 5.1 -25 9.2 C-25 13.3 -24.2 17.2 -22.5 20.7 L-14.2 14.4 Z" fill="#FBBC05"/>
+    <path d="M0 -6.5 C3.7 -6.5 7 -5.2 9.6 -2.7 L16.7 -9.8 C12.5 -13.7 6.8 -16 0 -16 C-9.9 -16 -18.4 -10.2 -22.5 -1.7 L-14.2 4.6 C-12.2 -1.4 -6.6 -6.5 0 -6.5 Z" fill="#EA4335"/>
+  </g>
+  <!-- Rating Score -->
+  <text x="65" y="38" fill="#FFFFFF" font-family="'Arial Black', Impact, sans-serif" font-size="28" font-weight="900">4.8</text>
+  <!-- Stars -->
+  <g transform="translate(65, 46)">
+    <polygon points="0,0 2,5 7,5 3,8 5,13 0,10 -5,13 -3,8 -7,5 -2,5" fill="#FBBC05"/>
+    <polygon points="12,0 14,5 19,5 15,8 17,13 12,10 7,13 9,8 5,5 10,5" fill="#FBBC05"/>
+    <polygon points="24,0 26,5 31,5 27,8 29,13 24,10 19,13 21,8 17,5 22,5" fill="#FBBC05"/>
+    <polygon points="36,0 38,5 43,5 39,8 41,13 36,10 31,13 33,8 29,5 34,5" fill="#FBBC05"/>
+    <polygon points="48,0 50,5 55,5 51,8 53,13 48,10 43,13 45,8 41,5 46,5" fill="#FBBC05"/>
+  </g>
+  <text x="65" y="74" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">1,610+ Reviews</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 90" width="100%" height="100%">
+  <!-- Facebook "f" circle -->
+  <circle cx="28" cy="32" r="18" fill="#1877F2"/>
+  <path d="M31 32 L35 32 L35.6 27 L31 27 L31 24 C31 22.7 31.4 21.8 33.3 21.8 L36 21.8 L36 17.3 C35.2 17.2 34 17 32.5 17 C29.4 17 27.2 18.9 27.2 22.4 L27.2 27 L22.5 27 L22.5 32 L27.2 32 L27.2 46 L31 46 Z" fill="#FFFFFF"/>
+  <!-- Score -->
+  <text x="65" y="38" fill="#FFFFFF" font-family="'Arial Black', Impact, sans-serif" font-size="28" font-weight="900">4.2</text>
+  <!-- Stars -->
+  <g transform="translate(65, 46)">
+    <polygon points="0,0 2,5 7,5 3,8 5,13 0,10 -5,13 -3,8 -7,5 -2,5" fill="#FBBC05"/>
+    <polygon points="12,0 14,5 19,5 15,8 17,13 12,10 7,13 9,8 5,5 10,5" fill="#FBBC05"/>
+    <polygon points="24,0 26,5 31,5 27,8 29,13 24,10 19,13 21,8 17,5 22,5" fill="#FBBC05"/>
+    <polygon points="36,0 38,5 43,5 39,8 41,13 36,10 31,13 33,8 29,5 34,5" fill="#FBBC05"/>
+    <polygon points="48,0 50,5 55,5 51,8 53,13 48,10 43,13 45,8 41,5 46,5" fill="#64748B"/>
+  </g>
+  <text x="65" y="74" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">540+ Reviews</text>
+</svg>

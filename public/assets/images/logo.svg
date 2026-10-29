@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 70" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logoRedGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E11D48"/>
+      <stop offset="100%" stop-color="#BE123C"/>
+    </linearGradient>
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Texas Shield / Emblem Icon -->
+  <g transform="translate(10, 5)">
+    <!-- Shield Background -->
+    <path d="M25 0 L50 6 L50 36 C50 50 25 60 25 60 C25 60 0 50 0 36 L0 6 Z" fill="#0F172A" stroke="#E11D48" stroke-width="2.5"/>
+    <path d="M25 5 L44 10 L44 34 C44 45 25 53 25 53 C25 53 6 45 6 34 L6 10 Z" fill="#1E293B"/>
+    <!-- Lone Star -->
+    <polygon points="25,12 28,21 37,21 30,26 33,35 25,30 17,35 20,26 13,21 22,21" fill="#E11D48"/>
+    <!-- Flame & Water Droplet Motif -->
+    <path d="M21 35 C21 32 25 28 25 28 C25 28 29 32 29 35 C29 37.5 27 39.5 25 39.5 C23 39.5 21 37.5 21 35 Z" fill="#38BDF8"/>
+  </g>
+
+  <!-- Text Section -->
+  <g transform="translate(70, 0)">
+    <!-- License Numbers Top -->
+    <text x="2" y="14" fill="#94A3B8" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.5">TACLA145786C &bull; M-40900</text>
+    
+    <!-- Brand Name: BLACK -->
+    <text x="0" y="42" fill="url(#metalGrad)" font-family="Impact, 'Arial Black', -apple-system, sans-serif" font-size="34" font-weight="900" letter-spacing="1">BLACK</text>
+    
+    <!-- Red Accent Box for PLUMBING -->
+    <rect x="122" y="19" width="138" height="26" rx="4" fill="url(#logoRedGrad)"/>
+    <text x="128" y="39" fill="#FFFFFF" font-family="'Arial Black', Impact, sans-serif" font-size="18.5" font-weight="900" letter-spacing="2">PLUMBING</text>
+    
+    <!-- Subtitle: HEATING & AIR -->
+    <text x="2" y="60" fill="#E2E8F0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="800" letter-spacing="4.5">HEATING &amp; AIR</text>
+    <line x1="165" y1="56" x2="260" y2="56" stroke="#E11D48" stroke-width="2"/>
+    <circle cx="264" cy="56" r="2.5" fill="#38BDF8"/>
+  </g>
+</svg>
+

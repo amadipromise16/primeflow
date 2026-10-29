@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="60%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#E0F2FE"/>
+    </linearGradient>
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="vanMetal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Big Texas Sky Background -->
+  <rect x="0" y="0" width="1200" height="420" fill="url(#skyGrad)"/>
+  
+  <!-- Subtle Soft Texas Clouds -->
+  <path d="M120 160 Q160 120 220 140 Q280 110 340 150 Q400 130 460 160 Q480 180 440 200 L140 200 Z" fill="#FFFFFF" fill-opacity="0.35"/>
+  <path d="M720 140 Q770 100 840 120 Q910 90 980 130 Q1040 110 1100 140 L1080 180 L740 180 Z" fill="#FFFFFF" fill-opacity="0.3"/>
+
+  <!-- Black Plumbing Headquarters Facade in Background -->
+  <rect x="250" y="160" width="700" height="230" fill="#1E293B" stroke="#475569" stroke-width="2"/>
+  <rect x="280" y="175" width="640" height="40" fill="#0F172A"/>
+  <text x="600" y="202" fill="#E11D48" font-family="'Impact', 'Arial Black', sans-serif" font-size="24" font-weight="900" text-anchor="middle" letter-spacing="4">BLACK PLUMBING HEATING &amp; AIR &bull; TEXAS HQ</text>
+  <!-- Warehouse Bay Doors -->
+  <rect x="300" y="240" width="120" height="150" fill="#334155" stroke="#64748B" stroke-width="2"/>
+  <rect x="460" y="240" width="120" height="150" fill="#334155" stroke="#64748B" stroke-width="2"/>
+  <rect x="620" y="240" width="120" height="150" fill="#334155" stroke="#64748B" stroke-width="2"/>
+  <rect x="780" y="240" width="120" height="150" fill="#334155" stroke="#64748B" stroke-width="2"/>
+
+  <!-- Pavement Ground -->
+  <rect x="0" y="380" width="1200" height="220" fill="url(#groundGrad)"/>
+  <line x1="0" y1="380" x2="1200" y2="380" stroke="#64748B" stroke-width="3"/>
+  <line x1="0" y1="560" x2="1200" y2="560" stroke="#F59E0B" stroke-width="4" stroke-dasharray="30,30" opacity="0.4"/>
+
+  <!-- Fleet of Service Vans (Left Van) -->
+  <g transform="translate(60, 270)">
+    <rect x="10" y="40" width="220" height="110" rx="8" fill="url(#vanMetal)" stroke="#334155" stroke-width="2"/>
+    <path d="M180 40 L230 80 L230 150 L180 150 Z" fill="url(#vanMetal)" stroke="#334155" stroke-width="2"/>
+    <!-- Windshield -->
+    <path d="M182 48 L220 80 L182 80 Z" fill="#0284C7" fill-opacity="0.7"/>
+    <!-- Red Brand Stripe -->
+    <rect x="10" y="85" width="210" height="26" fill="#DC2626"/>
+    <text x="110" y="103" fill="#FFFFFF" font-family="'Impact', sans-serif" font-size="13" font-weight="900" text-anchor="middle">BLACK PLUMBING</text>
+    <!-- Van Wheels -->
+    <circle cx="55" cy="150" r="22" fill="#0F172A" stroke="#E11D48" stroke-width="4"/>
+    <circle cx="185" cy="150" r="22" fill="#0F172A" stroke="#E11D48" stroke-width="4"/>
+  </g>
+
+  <!-- Fleet of Service Vans (Right Van) -->
+  <g transform="translate(900, 270)">
+    <rect x="10" y="40" width="220" height="110" rx="8" fill="url(#vanMetal)" stroke="#334155" stroke-width="2"/>
+    <path d="M10 40 L-40 80 L-40 150 L10 150 Z" fill="url(#vanMetal)" stroke="#334155" stroke-width="2"/>
+    <path d="M8 48 L-30 80 L8 80 Z" fill="#0284C7" fill-opacity="0.7"/>
+    <rect x="10" y="85" width="210" height="26" fill="#DC2626"/>
+    <text x="115" y="103" fill="#FFFFFF" font-family="'Impact', sans-serif" font-size="13" font-weight="900" text-anchor="middle">HEATING &amp; AIR</text>
+    <circle cx="45" cy="150" r="22" fill="#0F172A" stroke="#E11D48" stroke-width="4"/>
+    <circle cx="175" cy="150" r="22" fill="#0F172A" stroke="#E11D48" stroke-width="4"/>
+  </g>
+
+  <!-- The Black Plumbing Technician & Leadership Team in Foreground (Stylized Row) -->
+  <g transform="translate(320, 310)">
+    <!-- 14 Stylized Crew Members in Team Uniforms (Navy Blue Shirts with Red Accents) -->
+    <!-- Member 1 -->
+    <g transform="translate(0, 30)">
+      <circle cx="16" cy="12" r="10" fill="#FBCFE8"/>
+      <path d="M4 24 L28 24 L26 70 L6 70 Z" fill="#1E3A8A" stroke="#0F172A" stroke-width="1.5"/>
+      <path d="M14 24 L18 24 L18 45 L14 45 Z" fill="#DC2626"/>
+    </g>
+    <!-- Member 2 -->
+    <g transform="translate(40, 20)">
+      <circle cx="16" cy="12" r="10" fill="#FDE047"/>
+      <path d="M4 24 L28 24 L26 80 L6 80 Z" fill="#1E293B" stroke="#0F172A" stroke-width="1.5"/>
+      <path d="M14 24 L18 24 L18 45 L14 45 Z" fill="#DC2626"/>
+    </g>
+    <!-- Member 3 -->
+    <g transform="translate(80, 25)">
+      <circle cx="16" cy="12" r="10" fill="#FED7AA"/>
+      <path d="M4 24 L28 24 L26 75 L6 75 Z" fill="#1E3A8A" stroke="#0F172A" stroke-width="1.5"/>
+    </g>
+    <!-- Member 4 -->
+    <g transform="translate(120, 15)">
+      <circle cx="16" cy="12" r="10" fill="#FBCFE8"/>
+      <path d="M4 24 L28 24 L26 85 L6 85 Z" fill="#1E293B" stroke="#0F172A" stroke-width="1.5"/>
+      <path d="M14 24 L18 24 L18 45 L14 45 Z" fill="#DC2626"/>
+    </g>
+    <!-- Member 5 (Team Lead) -->
+    <g transform="translate(160, 5)">
+      <circle cx="18" cy="12" r="11" fill="#FDE047"/>
+      <path d="M4 24 L32 24 L30 95 L6 95 Z" fill="#0F172A" stroke="#DC2626" stroke-width="2"/>
+      <rect x="12" y="32" width="12" height="6" fill="#DC2626"/>
+      <!-- Hat -->
+      <path d="M8 8 Q18 2 28 8 L34 10 L8 10 Z" fill="#DC2626"/>
+    </g>
+    <!-- Member 6 (Lead Founder) -->
+    <g transform="translate(210, 0)">
+      <circle cx="18" cy="12" r="11" fill="#FED7AA"/>
+      <path d="M4 24 L32 24 L30 100 L6 100 Z" fill="#0F172A" stroke="#DC2626" stroke-width="2"/>
+      <rect x="12" y="32" width="12" height="6" fill="#DC2626"/>
+      <path d="M8 8 Q18 2 28 8 L34 10 L8 10 Z" fill="#1E3A8A"/>
+    </g>
+    <!-- Member 7 -->
+    <g transform="translate(260, 10)">
+      <circle cx="16" cy="12" r="10" fill="#FBCFE8"/>
+      <path d="M4 24 L28 24 L26 90 L6 90 Z" fill="#1E3A8A" stroke="#0F172A" stroke-width="1.5"/>
+      <path d="M14 24 L18 24 L18 45 L14 45 Z" fill="#DC2626"/>
+    </g>
+    <!-- Member 8 -->
+    <g transform="translate(300, 18)">
+      <circle cx="16" cy="12" r="10" fill="#FDE047"/>
+      <path d="M4 24 L28 24 L26 82 L6 82 Z" fill="#1E293B" stroke="#0F172A" stroke-width="1.5"/>
+    </g>
+    <!-- Member 9 -->
+    <g transform="translate(340, 22)">
+      <circle cx="16" cy="12" r="10" fill="#FED7AA"/>
+      <path d="M4 24 L28 24 L26 78 L6 78 Z" fill="#1E3A8A" stroke="#0F172A" stroke-width="1.5"/>
+      <path d="M14 24 L18 24 L18 45 L14 45 Z" fill="#DC2626"/>
+    </g>
+    <!-- Member 10 -->
+    <g transform="translate(380, 26)">
+      <circle cx="16" cy="12" r="10" fill="#FBCFE8"/>
+      <path d="M4 24 L28 24 L26 74 L6 74 Z" fill="#1E293B" stroke="#0F172A" stroke-width="1.5"/>
+    </g>
+    <!-- Member 11 -->
+    <g transform="translate(420, 30)">
+      <circle cx="16" cy="12" r="10" fill="#FDE047"/>
+      <path d="M4 24 L28 24 L26 70 L6 70 Z" fill="#1E3A8A" stroke="#0F172A" stroke-width="1.5"/>
+      <path d="M14 24 L18 24 L18 45 L14 45 Z" fill="#DC2626"/>
+    </g>
+    <!-- Member 12 -->
+    <g transform="translate(460, 32)">
+      <circle cx="16" cy="12" r="10" fill="#FED7AA"/>
+      <path d="M4 24 L28 24 L26 68 L6 68 Z" fill="#1E293B" stroke="#0F172A" stroke-width="1.5"/>
+    </g>
+    <!-- Member 13 -->
+    <g transform="translate(500, 34)">
+      <circle cx="16" cy="12" r="10" fill="#FBCFE8"/>
+      <path d="M4 24 L28 24 L26 66 L6 66 Z" fill="#1E3A8A" stroke="#0F172A" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- Front Hero Overlay Banner -->
+  <g transform="translate(350, 480)">
+    <rect width="500" height="90" rx="14" fill="#0F172A" fill-opacity="0.95" stroke="#E11D48" stroke-width="2"/>
+    <text x="250" y="34" fill="#FFFFFF" font-family="'Impact', 'Arial Black', sans-serif" font-size="20" font-weight="900" text-anchor="middle" letter-spacing="1.5">SERVING WEST &amp; CENTRAL TEXAS SINCE 1994</text>
+    <text x="250" y="58" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Over 40 Trucks &bull; 6 Regional Offices &bull; Licensed Master Plumbers</text>
+    <text x="250" y="78" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Abilene &bull; Big Spring &bull; Brownwood &bull; Cleburne &bull; Lubbock &bull; San Angelo</text>
+  </g>
+</svg>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule Service Online | Black Plumbing Heating &amp; Air</title>
+  <meta name="description" content="Book a licensed plumber or HVAC technician online in Abilene, San Angelo, Lubbock, Cleburne, and surrounding Texas areas. Same-day emergency service available.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="bg-mesh"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="header-logo" aria-label="Black Plumbing Home">
+        <img src="assets/images/logo.svg" alt="Black Plumbing Heating & Air" width="230" height="48">
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="plumbing.html" class="nav-link">Plumbing</a>
+        <a href="hvac.html" class="nav-link">Heating &amp; Air</a>
+        <a href="commercial.html" class="nav-link">Commercial</a>
+        <a href="locations.html" class="nav-link">Locations</a>
+        <a href="financing.html" class="nav-link">Financing</a>
+        <a href="schedule.html" class="nav-link active">Schedule Service</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:3252314695" class="btn-call-header">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          (325) 231-4695
+        </a>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <svg style="width:20px; height:20px; fill:currentColor;" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+        </button>
+        <button class="mobile-hamburger" aria-label="Open Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <img src="assets/images/logo.svg" alt="Black Plumbing" width="160">
+      <button class="drawer-close">✕</button>
+    </div>
+    <div class="drawer-nav">
+      <div class="drawer-item"><a href="index.html" class="drawer-link">Home</a></div>
+      <div class="drawer-item"><a href="about.html" class="drawer-link">About</a></div>
+      <div class="drawer-item"><a href="plumbing.html" class="drawer-link">Plumbing</a></div>
+      <div class="drawer-item"><a href="water-heaters.html" class="drawer-link">Water Heaters</a></div>
+      <div class="drawer-item"><a href="hvac.html" class="drawer-link">Heating &amp; Air</a></div>
+      <div class="drawer-item"><a href="commercial.html" class="drawer-link">Commercial</a></div>
+      <div class="drawer-item"><a href="locations.html" class="drawer-link">Locations</a></div>
+      <div class="drawer-item"><a href="financing.html" class="drawer-link">Financing</a></div>
+      <div class="drawer-item"><a href="schedule.html" class="drawer-link active">Schedule Service</a></div>
+      <div class="drawer-item"><a href="contact.html" class="drawer-link">Contact</a></div>
+    </div>
+    <div class="drawer-footer">
+      <a href="tel:3252314695" class="btn-primary-large" style="width:100%; text-align:center;">(325) 231-4695</a>
+    </div>
+  </aside>
+
+  <main>
+    <section class="page-hero">
+      <div class="container container-narrow">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a> <span>/</span> <span>Schedule Online</span>
+        </div>
+        <h1 class="page-hero-title">SCHEDULE SERVICE APPOINTMENT</h1>
+        <p class="page-hero-subtitle">
+          Select your service needs, preferred arrival window, and local city branch. We confirm appointments instantly with a real tracking reference.
+        </p>
+      </div>
+    </section>
+
+    <!-- Booking Form Container -->
+    <section style="padding: clamp(3rem, 5vw, 5rem) 0; background-color: var(--bg-body);">
+      <div class="container container-narrow">
+        <div class="booking-form-card">
+          <!-- Step Indicator -->
+          <div class="form-step-indicator">
+            <div class="step-node active" id="stepNode1">1</div>
+            <div class="step-node" id="stepNode2">2</div>
+            <div class="step-node" id="stepNode3">3</div>
+          </div>
+
+          <form id="smartBookingForm">
+            <!-- Step 1: Service Category & Issue -->
+            <div class="form-step" id="formStep1">
+              <h3 style="color:#FFFFFF; font-size:1.4rem; margin-bottom:1.5rem;">Step 1: What can we help you with?</h3>
+              
+              <div class="form-group">
+                <label class="form-label">Service Category *</label>
+                <select name="serviceCategory" class="form-select" required>
+                  <option value="Plumbing Repair">Plumbing Repair &amp; Fixtures</option>
+                  <option value="Water Heaters">Water Heater (Repair, Flush, or Replace)</option>
+                  <option value="AC Repair">AC Repair &amp; Cooling</option>
+                  <option value="Heating & Furnace">Heating &amp; Furnace Installation</option>
+                  <option value="Drain Cleaning">Drain Cleaning &amp; Hydro-Jet</option>
+                  <option value="Leak Detection">Electronic Leak Detection / Slab Leak</option>
+                  <option value="Commercial Service">Commercial Facility Service</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Specific Issue or Symptoms *</label>
+                <input type="text" name="specificIssue" class="form-input" placeholder="e.g. Water heater rumbling, AC blowing warm air, kitchen drain slow" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Urgency Level</label>
+                <select name="urgency" class="form-select">
+                  <option value="Routine">Standard Appointment (Next 2-3 Days)</option>
+                  <option value="Today">Priority Same-Day (Need help today)</option>
+                  <option value="Estimate">Free In-Home Replacement Estimate</option>
+                </select>
+              </div>
+
+              <div style="text-align:right; margin-top:2rem;">
+                <button type="button" class="btn-primary-large btn-next-step" style="font-size:1rem; padding:0.75rem 2rem;">
+                  Next: Schedule Time →
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Date & Window -->
+            <div class="form-step" id="formStep2" style="display:none;">
+              <h3 style="color:#FFFFFF; font-size:1.4rem; margin-bottom:1.5rem;">Step 2: Preferred Date &amp; Arrival Window</h3>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Preferred Date *</label>
+                  <input type="date" name="preferredDate" class="form-input" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Preferred Time Window *</label>
+                  <select name="timeWindow" class="form-select" required>
+                    <option value="Morning (8:00 AM - 12:00 PM)">Morning: 8:00 AM - 12:00 PM</option>
+                    <option value="Afternoon (12:00 PM - 4:00 PM)">Afternoon: 12:00 PM - 4:00 PM</option>
+                    <option value="Evening (4:00 PM - 7:00 PM)">Evening: 4:00 PM - 7:00 PM</option>
+                    <option value="First Available">First Available On-Call Truck</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Additional Instructions / Gate Codes</label>
+                <textarea name="notes" class="form-textarea" placeholder="Gate codes, pets, water shut-off location, etc."></textarea>
+              </div>
+
+              <div style="display:flex; justify-content:space-between; margin-top:2rem;">
+                <button type="button" class="btn-secondary-large btn-prev-step" style="font-size:1rem; padding:0.75rem 1.75rem;">
+                  ← Back
+                </button>
+                <button type="button" class="btn-primary-large btn-next-step" style="font-size:1rem; padding:0.75rem 2rem;">
+                  Next: Contact Details →
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Contact Details & Dispatch Confirmation -->
+            <div class="form-step" id="formStep3" style="display:none;">
+              <h3 style="color:#FFFFFF; font-size:1.4rem; margin-bottom:1.5rem;">Step 3: Where should we dispatch?</h3>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Full Name *</label>
+                  <input type="text" name="name" class="form-input" placeholder="David Miller" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Phone Number *</label>
+                  <input type="tel" name="phone" class="form-input" placeholder="(325) 555-0144" required>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">City *</label>
+                  <select name="city" class="form-select" required>
+                    <option value="Abilene" selected>Abilene (HQ Sector)</option>
+                    <option value="Big Spring">Big Spring</option>
+                    <option value="Brownwood">Brownwood</option>
+                    <option value="Cleburne">Cleburne</option>
+                    <option value="Kerrville">Kerrville</option>
+                    <option value="Lubbock">Lubbock</option>
+                    <option value="San Angelo">San Angelo</option>
+                    <option value="Midland">Midland</option>
+                    <option value="Snyder">Snyder</option>
+                    <option value="Sweetwater">Sweetwater</option>
+                    <option value="Other Area">Other Texas Area</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Email Address</label>
+                  <input type="email" name="email" class="form-input" placeholder="david@example.com">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Street Address *</label>
+                <input type="text" name="address" class="form-input" placeholder="452 Elm Street" required>
+              </div>
+
+              <div style="display:flex; justify-content:space-between; margin-top:2rem;">
+                <button type="button" class="btn-secondary-large btn-prev-step" style="font-size:1rem; padding:0.75rem 1.75rem;">
+                  ← Back
+                </button>
+                <button type="submit" class="btn-primary-large" style="font-size:1.1rem; padding:0.75rem 2.25rem;">
+                  Confirm &amp; Book Appointment
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Confirmation Result -->
+          <div id="bookingConfirmationResult" style="display:none;"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <img src="assets/images/logo.svg" alt="Black Plumbing Heating & Air" width="220">
+          <div class="footer-hours-badge">HOURS: Open 24/7</div>
+          <div class="footer-license-box">
+            <span class="footer-license-num">LICENSE #M-40900</span>
+            <span class="footer-license-num">LICENSE #TACLA145786C</span>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">SERVICES</h4>
+          <ul class="footer-link-list">
+            <li><a href="plumbing.html">Plumbing Repairs</a></li>
+            <li><a href="water-heaters.html">Water Heaters</a></li>
+            <li><a href="hvac.html#ac-repair">AC Repair</a></li>
+            <li><a href="commercial.html">Commercial Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">COMPANY</h4>
+          <ul class="footer-link-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">CALL TO BOOK DIRECT</h4>
+          <a href="tel:3252314695" class="btn-primary-large" style="width:100%; text-align:center;">(325) 231-4695</a>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Black Plumbing Heating &amp; Air. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-sticky-call-bar">
+    <a href="tel:3252314695" class="mobile-call-bar-inner">
+      CALL (325) 231-4695 &bull; SAME-DAY DISPATCH
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/api.js"></script>
+</body>
+</html>
+
