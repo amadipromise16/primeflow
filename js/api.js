@@ -149,11 +149,11 @@ function initBookingWizard() {
         `;
       }
       if (window.showToast) window.showToast('Appointment successfully confirmed!', 'success');
-    } finally {
-      if (submitBtn) {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Confirm & Book Appointment';
-      }
+    }
+
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Confirm & Book Appointment';
     }
   });
 }
@@ -330,17 +330,6 @@ function initReviewForm() {
       form.reset();
       if (window.showToast) window.showToast(data.message, 'success');
       setTimeout(() => location.reload(), 1500);
-    }
-      const data = await res.json();
-      if (data.success) {
-        form.reset();
-        if (window.showToast) window.showToast(data.message, 'success');
-        setTimeout(() => location.reload(), 1500);
-      } else {
-        if (window.showToast) window.showToast(data.error, 'error');
-      }
-    } catch (err) {
-      console.error(err);
     }
   });
 }

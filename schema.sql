@@ -105,3 +105,4 @@ CREATE INDEX IF NOT EXISTS idx_bookings_date ON bookings(preferred_date);
 CREATE INDEX IF NOT EXISTS idx_emergencies_status ON emergencies(status);
 CREATE INDEX IF NOT EXISTS idx_reviews_rating ON reviews(rating);
 CREATE INDEX IF NOT EXISTS idx_locations_code ON locations(code);
+

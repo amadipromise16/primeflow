@@ -7,3 +7,4 @@ echo.
 echo Starting application server...
 npm start
 pause
+

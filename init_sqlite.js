@@ -100,3 +100,4 @@ const revCount = db.prepare('SELECT COUNT(*) as count FROM reviews').get();
 console.log(`\nSQLite Database Initialized! Database file: black_plumbing.db`);
 console.log(`Locations in DB: ${locCount.count}`);
 console.log(`Reviews in DB: ${revCount.count}`);
+
