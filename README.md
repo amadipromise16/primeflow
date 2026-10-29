@@ -128,7 +128,7 @@ This project has been structured and optimized for hosting on **GitHub Pages**:
 2. **Link to your GitHub Repository**:
    Create a new empty repository on [GitHub](https://github.com/new) (e.g., `black-plumbing` or `primeflow`), then run:
    ```bash
-   git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPOSITORY_NAME>.git
+   git remote add origin https://github.com/amadipromise16/primeflow.git
    git push -u origin main
    ```
 
@@ -140,7 +140,7 @@ This project has been structured and optimized for hosting on **GitHub Pages**:
      - **Branch**: Select `main` / `/ (root)`.
      - Click **Save**.
    - Your website will be live in seconds at:
-     `https://<YOUR_GITHUB_USERNAME>.github.io/<YOUR_REPOSITORY_NAME>/`
+     `https://amadipromise16.github.io/primeflow/`
 
 ```
 http://localhost:3000
