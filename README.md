@@ -68,37 +68,43 @@ A full-stack website recreation of **Black Plumbing Heating & Air** (`blackplumb
 
 ---
 
-## ⚡ Full-Stack Backend Capabilities (Node.js)
+## ⚡ Dual Full-Stack Backend Architecture with SQLite
 
-`server.js` provides a zero-dependency, production-grade REST API:
-- `POST /api/schedule`: Real service appointment booking with automatic technician assignment and unique reference code generation.
-- `POST /api/emergency`: 24/7 Priority Emergency dispatch queue with live countdown ETA calculation.
-- `POST /api/financing/calculate`: Live calculation of monthly payments, total costs, and interest across multiple loan terms.
-- `POST /api/financing/apply`: Instant pre-qualification simulator with approval credit line calculation.
-- `POST /api/diagnostic/water-heater`: Intelligent diagnostic engine evaluating age, symptoms, and West Texas mineral scaling.
-- `GET /api/locations`: Returns real-time branch status, on-duty trucks count, and emergency response times.
-- `GET /api/reviews` & `POST /api/reviews`: Verified review retrieval and dynamic submission with persistence.
-- `POST /api/contact`: General callback and commercial quote requests.
+The application features a shared production-grade **SQLite database (`black_plumbing.db`)** that can be run interchangeably with either **Python Flask** or **Node.js**:
+
+### 🗄️ SQLite Database Schema (`black_plumbing.db` & `schema.sql`)
+1. **`bookings`**: Stores customer appointments, technician assignments (`Master Tech #4`), scheduled time windows, and booking reference IDs.
+2. **`emergencies`**: 24/7 priority emergency dispatch queue with real-time ETA calculation and assigned trucks.
+3. **`contact_messages`**: General callback requests, commercial quote inquiries, and dispatch tickets.
+4. **`financing_applications`**: Instant paperless pre-qualification applications with calculated credit limits.
+5. **`reviews`**: Customer testimonials with star ratings, source badges (Google, Angi, Facebook), and verification flags.
+6. **`locations`**: Physical branch directories, live fleet counts, and direct telephone lines for all 7 regional offices.
 
 ---
 
 ## 🚀 How to Run the Website Locally
 
-### Prerequisites
-- Node.js (v16+ installed)
+### Option A: Python Flask + SQLite
+1. Install Python requirements:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Run the Flask application:
+   ```bash
+   python app.py
+   # Or double-click run_flask.bat on Windows
+   ```
+3. Open your browser at:
+   `http://localhost:5000`
 
-### Running the Application
-```bash
-# In the project directory
-npm start
-```
-Or directly with Node:
-```bash
-node server.js
-```
-
-Then open your browser at:
-`http://localhost:3000`
+### Option B: Node.js + SQLite
+1. Start the server (zero external dependencies required):
+   ```bash
+   npm start
+   # Or run node server.js / double-click run_node.bat
+   ```
+2. Open your browser at:
+   `http://localhost:3000`
 
 ---
 

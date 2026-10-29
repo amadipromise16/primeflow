@@ -7,10 +7,20 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const url = require('url');
+const { DatabaseSync } = require('node:sqlite');
 
 const PORT = process.env.PORT || 3000;
 const PUBLIC_DIR = path.join(__dirname, 'public');
-const DATA_FILE = path.join(__dirname, 'data_store.json');
+const DB_PATH = path.join(__dirname, 'black_plumbing.db');
+
+// Initialize SQLite database connection
+let sqliteDb = null;
+try {
+  sqliteDb = new DatabaseSync(DB_PATH);
+  console.log('✓ SQLite Database Connected:', DB_PATH);
+} catch (err) {
+  console.error('SQLite connection warning:', err.message);
+}
 
 // Initialize in-memory / persistent data store
 let dataStore = {
@@ -310,6 +320,18 @@ const server = http.createServer(async (req, res) => {
       };
       dataStore.reviews.unshift(newReview);
       saveDataStore();
+
+      if (sqliteDb) {
+        try {
+          sqliteDb.prepare(`
+            INSERT INTO reviews (review_id, author, rating, review_date, source, service, location, content, is_verified)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, 1)
+          `).run(newReview.id, newReview.author, newReview.rating, newReview.date, newReview.source, newReview.service, newReview.location, newReview.content);
+        } catch (e) {
+          console.error('SQLite review insert error:', e.message);
+        }
+      }
+
       sendJson(res, 201, {
         success: true,
         message: 'Thank you for your review! It has been posted to our customer feedback wall.',
@@ -354,6 +376,25 @@ const server = http.createServer(async (req, res) => {
       dataStore.bookings.push(booking);
       saveDataStore();
 
+      if (sqliteDb) {
+        try {
+          sqliteDb.prepare(`
+            INSERT INTO bookings (
+              booking_id, customer_name, customer_phone, customer_email,
+              customer_address, customer_city, service_category, specific_issue,
+              preferred_date, time_window, notes, assigned_tech, status
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          `).run(
+            booking.bookingId, name, phone, email || '',
+            address || 'On File', city, serviceCategory, specificIssue || '',
+            preferredDate || 'Tomorrow', timeWindow || 'Morning (8am - 12pm)',
+            notes || '', assignedTech, 'CONFIRMED'
+          );
+        } catch (e) {
+          console.error('SQLite booking insert error:', e.message);
+        }
+      }
+
       sendJson(res, 200, {
         success: true,
         message: 'Your service appointment has been successfully scheduled!',
@@ -396,6 +437,23 @@ const server = http.createServer(async (req, res) => {
 
       dataStore.emergencies.push(emergencyEntry);
       saveDataStore();
+
+      if (sqliteDb) {
+        try {
+          sqliteDb.prepare(`
+            INSERT INTO emergencies (
+              emergency_id, customer_name, customer_phone, customer_city,
+              customer_address, emergency_type, details, assigned_truck, eta_minutes, status
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          `).run(
+            emergencyEntry.emergencyId, emergencyEntry.customer.name, phone,
+            city, address || 'On file', emergencyType, details || '',
+            emergencyEntry.assignedTruck, etaMinutes, 'DISPATCHED'
+          );
+        } catch (e) {
+          console.error('SQLite emergency insert error:', e.message);
+        }
+      }
 
       sendJson(res, 200, {
         success: true,
@@ -498,6 +556,23 @@ const server = http.createServer(async (req, res) => {
 
       dataStore.financingApplications.push(appRecord);
       saveDataStore();
+
+      if (sqliteDb) {
+        try {
+          sqliteDb.prepare(`
+            INSERT INTO financing_applications (
+              application_id, applicant_name, applicant_phone, applicant_email,
+              monthly_income, credit_tier, requested_amount, plan_id, approved_limit, status
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          `).run(
+            appRecord.applicationId, name, phone, email || '',
+            5000, 'good', appRecord.amount, planSelected || 'plan-18-zero',
+            appRecord.approvedLimit, 'PRE_APPROVED'
+          );
+        } catch (e) {
+          console.error('SQLite financing insert error:', e.message);
+        }
+      }
 
       sendJson(res, 200, {
         success: true,
@@ -606,6 +681,17 @@ const server = http.createServer(async (req, res) => {
 
       dataStore.contactMessages.push(msgRecord);
       saveDataStore();
+
+      if (sqliteDb) {
+        try {
+          sqliteDb.prepare(`
+            INSERT INTO contact_messages (sender_name, sender_phone, sender_email, subject, message)
+            VALUES (?, ?, ?, ?, ?)
+          `).run(name, phone, email || '', subject || 'General Inquiry', message || '');
+        } catch (e) {
+          console.error('SQLite contact message insert error:', e.message);
+        }
+      }
 
       sendJson(res, 200, {
         success: true,
